@@ -1,5 +1,6 @@
 package edu.uoc.tfg.core.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import java.util.Date;
@@ -17,5 +18,6 @@ public class Publicacion {
     private String titulo;
     private String mensaje;
     private Date fechaEvento;
+    @JsonIgnore
     private Comunidad comunidad;
 }

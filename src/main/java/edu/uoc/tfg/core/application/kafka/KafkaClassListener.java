@@ -1,6 +1,6 @@
 package edu.uoc.tfg.core.application.kafka;
 
-import edu.uoc.tfg.core.ParSesion;
+import edu.uoc.tfg.core.SesionData;
 import edu.uoc.tfg.core.domain.service.ClienteService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +14,10 @@ public class KafkaClassListener {
     @Autowired
     private ClienteService clienteService;
 
-    @KafkaListener(topics = KafkaConstants.TOPIC_SESSION_ADD, groupId = "group-1")
-    void sessionAdded(ParSesion sesion) {
-        log.trace("SessionAdded");
+    @KafkaListener(topics = KafkaConstants.TOPIC_SESSION, groupId = "group-1")
+    void setSession(SesionData sesion) {
+        log.trace("SessionSet");
 
-        clienteService.addSession(sesion);
+        clienteService.setSession(sesion);
     }
 }

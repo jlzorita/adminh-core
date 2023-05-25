@@ -20,21 +20,22 @@ public class Comunidad {
     private String cp;
     private String municipio;
     private String provincia;
+    private String iban;
     private Long presidenteId;
-
+    private String administrador;
     @Builder.Default
     @JsonIgnore
     private Set<Publicacion> publicaciones = new HashSet<>();
-
     @Builder.Default
     @JsonIgnore
     private Set<Presupuesto> presupuestos = new HashSet<>();
-
     @Builder.Default
     @JsonIgnore
     private Set<Entidad> entidades = new HashSet<>();
-
     @Builder.Default
     @JsonIgnore
     private Set<Factura> facturas = new HashSet<>();
+    @Builder.Default
+    @JsonIgnore
+    private Set<Recibo> recibos = new HashSet<>();
 }

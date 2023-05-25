@@ -62,7 +62,7 @@ public class PublicacionEntity implements DomainTranslatable<Publicacion> {
                 .titulo(this.getTitulo())
                 .mensaje(this.getMensaje())
                 .fechaEvento(this.getFechaEvento())
-                .comunidad(this.getComunidad().toDomain())
+                //.comunidad(this.getComunidad().toDomain())
                 .build();
     }
 }

@@ -26,6 +26,6 @@ public class Presupuesto {
     @Builder.Default
     @JsonIgnore
     private Set<Recibo> recibos = new HashSet<>();
-
+    @JsonIgnore
     private Comunidad comunidad;
 }

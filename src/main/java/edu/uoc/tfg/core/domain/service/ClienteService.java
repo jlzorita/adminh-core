@@ -1,11 +1,8 @@
 package edu.uoc.tfg.core.domain.service;
 
-import edu.uoc.tfg.core.ParSesion;
-import edu.uoc.tfg.core.domain.Comunidad;
-
-import java.util.Optional;
+import edu.uoc.tfg.core.SesionData;
 
 public interface ClienteService {
-    void addSession(ParSesion sesion);
+    void setSession(SesionData sesion);
 
 }

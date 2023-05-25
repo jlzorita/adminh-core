@@ -11,28 +11,12 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/application/kafka/KafkaConstants.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/application/kafka/KafkaConsumerConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/application/request/ClienteRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/application/rest/ClienteRESTController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/Cliente.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/Comunidad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/Entidad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/EntidadPropietario.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/Factura.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/Partida.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/Presupuesto.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/Publicacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/Recibo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/repository/ClienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/service/ClienteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/service/ClienteServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/infrastructure/repository/jpa/ComunidadEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/infrastructure/repository/jpa/DomainTranslatable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/infrastructure/repository/jpa/EntidadEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/infrastructure/repository/jpa/EntidadPropietarioEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/infrastructure/repository/jpa/FacturaEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/infrastructure/repository/jpa/PartidaEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/infrastructure/repository/jpa/PresupuestoEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/infrastructure/repository/jpa/PublicacionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/infrastructure/repository/jpa/ReciboEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,12 +27,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -89,7 +74,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;sonarlint&quot;,
@@ -100,7 +85,11 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="edu.uoc.tfg.core.infrastructure.repository.jpa" />
+      <recent name="edu.uoc.tfg.core.domain.service" />
       <recent name="edu.uoc.tfg.core.domain" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="edu.uoc.tfg.core" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.CoreApplication">
@@ -194,7 +183,36 @@
       <workItem from="1682544180795" duration="352000" />
       <workItem from="1682623437178" duration="4921000" />
       <workItem from="1682694595027" duration="9122000" />
-      <workItem from="1682756232442" duration="1047000" />
+      <workItem from="1682756232442" duration="13335000" />
+      <workItem from="1682842617187" duration="12659000" />
+      <workItem from="1682889159492" duration="609000" />
+      <workItem from="1682931258766" duration="9074000" />
+      <workItem from="1683007468539" duration="2946000" />
+      <workItem from="1683047896164" duration="10795000" />
+      <workItem from="1683137465488" duration="8773000" />
+      <workItem from="1683221079787" duration="10315000" />
+      <workItem from="1683234902387" duration="179000" />
+      <workItem from="1683360397127" duration="1059000" />
+      <workItem from="1683657201061" duration="850000" />
+      <workItem from="1683743196254" duration="3745000" />
+      <workItem from="1683833499860" duration="5103000" />
+      <workItem from="1683921348989" duration="146000" />
+      <workItem from="1683924047171" duration="921000" />
+      <workItem from="1683988992170" duration="808000" />
+      <workItem from="1683990678809" duration="4054000" />
+      <workItem from="1684084737402" duration="3378000" />
+      <workItem from="1684088134731" duration="47000" />
+      <workItem from="1684261725873" duration="4310000" />
+      <workItem from="1684356962625" duration="26000" />
+      <workItem from="1684357204552" duration="1044000" />
+      <workItem from="1684521309368" duration="2842000" />
+      <workItem from="1684525583631" duration="3090000" />
+      <workItem from="1684575684279" duration="5836000" />
+      <workItem from="1684657487822" duration="24810000" />
+      <workItem from="1684869148674" duration="4523000" />
+      <workItem from="1684910254169" duration="1029000" />
+      <workItem from="1684946456784" duration="7659000" />
+      <workItem from="1684961704427" duration="1953000" />
     </task>
     <servers />
   </component>
@@ -204,14 +222,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/adminh_core$CoreApplication.ic" NAME="CoreApplication Coverage Results" MODIFIED="1684658332086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>edu.uoc.tfg.core.*</FILTER>
+    </SUITE>
   </component>
 </project>

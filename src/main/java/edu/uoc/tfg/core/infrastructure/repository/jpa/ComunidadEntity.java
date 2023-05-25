@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 @Getter
 @Setter
 @AllArgsConstructor
-@EqualsAndHashCode
+@EqualsAndHashCode(exclude={"entidades","publicaciones","presupuestos","facturas", "recibos"})
 @Builder
 @NoArgsConstructor
 @Table(name = "comunidad")
@@ -36,8 +36,12 @@ public class ComunidadEntity implements DomainTranslatable<Comunidad> {
     private String municipio;
     @Column(name = "provincia", nullable = false)
     private String provincia;
+    @Column(name = "iban", nullable = false)
+    private String iban;
     @Column(name = "presidente_id", nullable = false)
     private Long presidenteId;
+    @Column(name = "administrador", nullable = false)
+    private String administrador;
     @OneToMany(mappedBy="id")
     private Set<PublicacionEntity> publicaciones = new HashSet<>();
     @OneToMany(mappedBy="id")
@@ -46,6 +50,9 @@ public class ComunidadEntity implements DomainTranslatable<Comunidad> {
     private Set<EntidadEntity> entidades = new HashSet<>();
     @OneToMany(mappedBy="id")
     private Set<FacturaEntity> facturas = new HashSet<>();
+
+    @OneToMany(mappedBy="id")
+    private Set<ReciboEntity> recibos = new HashSet<>();
 
     public static ComunidadEntity fromDomain(Comunidad comunidad) {
         if (comunidad == null) {
@@ -60,11 +67,14 @@ public class ComunidadEntity implements DomainTranslatable<Comunidad> {
                 .cp(comunidad.getCp())
                 .municipio(comunidad.getMunicipio())
                 .provincia(comunidad.getProvincia())
+                .iban(comunidad.getIban())
                 .presidenteId(comunidad.getPresidenteId())
+                .administrador(comunidad.getAdministrador())
                 .publicaciones(comunidad.getPublicaciones().stream().map(PublicacionEntity::fromDomain).collect(Collectors.toSet()))
                 .presupuestos(comunidad.getPresupuestos().stream().map(PresupuestoEntity::fromDomain).collect(Collectors.toSet()))
                 .entidades(comunidad.getEntidades().stream().map(EntidadEntity::fromDomain).collect(Collectors.toSet()))
                 .facturas(comunidad.getFacturas().stream().map(FacturaEntity::fromDomain).collect(Collectors.toSet()))
+                .recibos(comunidad.getRecibos().stream().map(ReciboEntity::fromDomain).collect(Collectors.toSet()))
                 .build();
     }
     @Override
@@ -77,10 +87,13 @@ public class ComunidadEntity implements DomainTranslatable<Comunidad> {
                 .cp(this.getCp())
                 .municipio(this.getMunicipio())
                 .provincia(this.getProvincia())
+                .iban(this.getIban())
                 .presidenteId(this.getPresidenteId())
-                .publicaciones((this.getPublicaciones().stream().map(PublicacionEntity::toDomain).collect(Collectors.toSet())))
-                .presupuestos((this.getPresupuestos().stream().map(PresupuestoEntity::toDomain).collect(Collectors.toSet())))
-                .entidades((this.getEntidades().stream().map(EntidadEntity::toDomain).collect(Collectors.toSet())))
+                .administrador(this.getAdministrador())
+                .publicaciones((this.getPublicaciones().stream().map(PublicacionEntity::toDomain).collect(Collectors.toSet())))//*
+                .presupuestos((this.getPresupuestos().stream().map(PresupuestoEntity::toDomain).collect(Collectors.toSet())))//*
+                .entidades((this.getEntidades().stream().map(EntidadEntity::toDomain).collect(Collectors.toSet())))//*
+                .recibos((this.getRecibos().stream().map(ReciboEntity::toDomain).collect(Collectors.toSet())))//*
                 .facturas((this.getFacturas().stream().map(FacturaEntity::toDomain).collect(Collectors.toSet())))
                 .build();
     }

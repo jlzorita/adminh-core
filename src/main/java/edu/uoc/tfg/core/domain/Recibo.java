@@ -2,6 +2,7 @@ package edu.uoc.tfg.core.domain;
 
 import lombok.*;
 
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Getter
@@ -17,5 +18,9 @@ public class Recibo {
     private Float importe;
     private Date fechaPago;
     private Boolean pagado;
+    @NotNull
+    private Comunidad comunidad;
+    @NotNull
     private Entidad entidad;
+
 }

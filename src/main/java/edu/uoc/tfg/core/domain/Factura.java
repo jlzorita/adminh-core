@@ -1,5 +1,6 @@
 package edu.uoc.tfg.core.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import java.util.Date;
@@ -19,9 +20,12 @@ public class Factura {
     private Boolean pagada;
     private Boolean autorizada;
     private Date fechaPago;
-    private String pdf;
+    //private String pdf;
+    private Boolean pdf;
     private Long proveedorId;
+    @JsonIgnore
     private Comunidad comunidad;
+    @JsonIgnore
     private Partida partida;
 
 }

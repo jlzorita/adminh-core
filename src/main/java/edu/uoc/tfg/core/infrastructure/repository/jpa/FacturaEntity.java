@@ -10,7 +10,7 @@ import java.util.Date;
 @Getter
 @Setter
 @AllArgsConstructor
-@EqualsAndHashCode
+@EqualsAndHashCode(exclude={"comunidad"})
 @Builder
 @NoArgsConstructor
 @Table(name = "factura")
@@ -33,7 +33,9 @@ public class FacturaEntity implements DomainTranslatable<Factura> {
     @Column(name = "fecha_pago")
     private Date fechaPago;
     @Column(name = "pdf")
-    private String pdf;
+    private Boolean pdf;
+
+    //private String pdf;
     @Column(name = "proveedor_id", nullable = false)
     private Long proveedorId;
     @ManyToOne
@@ -76,8 +78,8 @@ public class FacturaEntity implements DomainTranslatable<Factura> {
                 .fechaPago(this.getFechaPago())
                 .pdf(this.getPdf())
                 .proveedorId(this.getProveedorId())
-                .comunidad(this.getComunidad().toDomain())
-                .partida(this.getPartida().toDomain())
+                //.comunidad(this.getComunidad().toDomain())//*
+                //.partida(this.getPartida().toDomain())
                 .build();
     }
 }

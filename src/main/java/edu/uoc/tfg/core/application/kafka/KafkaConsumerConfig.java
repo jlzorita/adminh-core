@@ -1,6 +1,6 @@
 package edu.uoc.tfg.core.application.kafka;
 
-import edu.uoc.tfg.core.ParSesion;
+import edu.uoc.tfg.core.SesionData;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.beans.factory.annotation.Value;
@@ -25,9 +25,9 @@ class KafkaConsumerConfig {
     private String bootstrapServers;
 
     @Bean
-    public ConsumerFactory<String, ParSesion> showConsumerFactory() {
+    public ConsumerFactory<String, SesionData> showConsumerFactory() {
 
-        JsonDeserializer<ParSesion> deserializer = new JsonDeserializer<>(ParSesion.class);
+        JsonDeserializer<SesionData> deserializer = new JsonDeserializer<>(SesionData.class);
         deserializer.setRemoveTypeHeaders(false);
         deserializer.addTrustedPackages("*");
         deserializer.setUseTypeMapperForKey(true);
@@ -44,8 +44,8 @@ class KafkaConsumerConfig {
     }
 
     @Bean
-    public KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, ParSesion>> kafkaListenerContainerFactory() {
-        ConcurrentKafkaListenerContainerFactory<String, ParSesion> factory =
+    public KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, SesionData>> kafkaListenerContainerFactory() {
+        ConcurrentKafkaListenerContainerFactory<String, SesionData> factory =
                 new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(showConsumerFactory());
         return factory;

@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 @Getter
 @Setter
 @AllArgsConstructor
-@EqualsAndHashCode
+@EqualsAndHashCode(exclude={"recibos","propietarios", "comunidad"})
 @Builder
 @NoArgsConstructor
 @Table(name = "entidad")
@@ -36,11 +36,7 @@ public class EntidadEntity implements DomainTranslatable<Entidad> {
     @JoinColumn(name="comunidad_id", referencedColumnName = "id")
     private ComunidadEntity comunidad;
 
-    @Builder.Default
-    @ElementCollection(targetClass = EntidadPropietarioEntity.class)
-    @CollectionTable(name = "entidad_propietario", joinColumns = @JoinColumn(name = "entidad_id", referencedColumnName = "id"), uniqueConstraints = {@UniqueConstraint(columnNames = {"cliente_id", "entidad_id"})})
-    @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    @JsonIgnore
+    @OneToMany(mappedBy="id")
     private Set<EntidadPropietarioEntity> propietarios = new HashSet<>();
 
     public static EntidadEntity fromDomain(Entidad entidad) {
@@ -63,9 +59,9 @@ public class EntidadEntity implements DomainTranslatable<Entidad> {
                     .id(this.getId())
                     .nombre(this.getNombre())
                     .coeficiente(this.getCoeficiente())
-                    .recibos((this.getRecibos().stream().map(ReciboEntity::toDomain).collect(Collectors.toSet())))
-                    .propietarios((this.getPropietarios().stream().map(EntidadPropietarioEntity::toDomain).collect(Collectors.toSet())))
-                    .comunidad(this.getComunidad().toDomain())
+                    //.recibos((this.getRecibos().stream().map(ReciboEntity::toDomain).collect(Collectors.toSet())))//*
+                    //.propietarios((this.getPropietarios().stream().map(EntidadPropietarioEntity::toDomain).collect(Collectors.toSet())))//*
+                    //.comunidad(this.getComunidad().toDomain())
                     .build();
         }
 }

@@ -20,7 +20,7 @@ public class ClienteRESTController {
 
     @GetMapping("/user/sesion/{usuario}")
     @ResponseStatus(HttpStatus.OK)
-    public String getClienteSesion(@PathVariable String usuario) {
+    public String[] getClienteSesion(@PathVariable String usuario) {
         return Cliente.getSesion(usuario);
     }
 }

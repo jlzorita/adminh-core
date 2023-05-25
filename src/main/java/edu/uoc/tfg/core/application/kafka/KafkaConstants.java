@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 public final class KafkaConstants {
 
     // topic items
-    public static final String TOPIC_SESSION_ADD = "sessions.add.CORE";
+    public static final String TOPIC_SESSION = "sessions.CORE";
+
 
 }

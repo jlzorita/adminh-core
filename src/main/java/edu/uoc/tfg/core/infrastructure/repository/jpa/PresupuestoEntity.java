@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 @Getter
 @Setter
 @AllArgsConstructor
-@EqualsAndHashCode
+@EqualsAndHashCode(exclude={"partidas"})
 @Builder
 @NoArgsConstructor
 @Table(name = "presupuesto")
@@ -34,7 +34,6 @@ public class PresupuestoEntity implements DomainTranslatable<Presupuesto> {
     private Set<PartidaEntity> partidas = new HashSet<>();
     @OneToMany(mappedBy="id")
     private Set<ReciboEntity> recibos = new HashSet<>();
-
     @ManyToOne
     @JoinColumn(name="comunidad_id", referencedColumnName = "id")
     private ComunidadEntity comunidad;
@@ -63,9 +62,9 @@ public class PresupuestoEntity implements DomainTranslatable<Presupuesto> {
                 .fechaFinal(this.getFechaFinal())
                 .nombre(this.getNombre())
                 .saldoInicial(this.getSaldoInicial())
-                .partidas((this.getPartidas().stream().map(PartidaEntity::toDomain).collect(Collectors.toSet())))
-                .recibos((this.getRecibos().stream().map(ReciboEntity::toDomain).collect(Collectors.toSet())))
-                .comunidad(this.getComunidad().toDomain())
+                //.partidas((this.getPartidas().stream().map(PartidaEntity::toDomain).collect(Collectors.toSet())))
+                //.recibos((this.getRecibos().stream().map(ReciboEntity::toDomain).collect(Collectors.toSet())))
+                //.comunidad(this.getComunidad().toDomain())
                 .build();
     }
 }

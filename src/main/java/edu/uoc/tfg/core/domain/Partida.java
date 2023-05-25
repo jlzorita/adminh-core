@@ -3,6 +3,7 @@ package edu.uoc.tfg.core.domain;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
+import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -19,4 +20,7 @@ public class Partida {
     @Builder.Default
     @JsonIgnore
     private Set<Factura> facturas = new HashSet<>();
+    @NotNull
+    @JsonIgnore
+    private Presupuesto presupuesto;
 }

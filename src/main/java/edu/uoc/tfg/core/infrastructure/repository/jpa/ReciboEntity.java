@@ -10,7 +10,7 @@ import java.util.Date;
 @Getter
 @Setter
 @AllArgsConstructor
-@EqualsAndHashCode
+@EqualsAndHashCode(exclude={"comunidad", "entidad"})
 @Builder
 @NoArgsConstructor
 @Table(name = "recibo")
@@ -36,6 +36,11 @@ public class ReciboEntity implements DomainTranslatable<Recibo> {
     @ManyToOne
     @JoinColumn(name="entidad_id", referencedColumnName = "id")
     private EntidadEntity entidad;
+    @ManyToOne
+    @JoinColumn(name="comunidad_id", referencedColumnName = "id")
+    private ComunidadEntity comunidad;
+
+
 
     public static ReciboEntity fromDomain(Recibo recibo) {
         if (recibo == null) {
@@ -49,6 +54,7 @@ public class ReciboEntity implements DomainTranslatable<Recibo> {
                 .importe(recibo.getImporte())
                 .fechaPago(recibo.getFechaPago())
                 .pagado(recibo.getPagado())
+                .comunidad(ComunidadEntity.fromDomain(recibo.getComunidad()))
                 .entidad(EntidadEntity.fromDomain(recibo.getEntidad()))
                 .build();
     }
@@ -61,7 +67,9 @@ public class ReciboEntity implements DomainTranslatable<Recibo> {
                 .importe(this.getImporte())
                 .fechaPago(this.getFechaPago())
                 .pagado(this.getPagado())
-                .entidad(this.getEntidad().toDomain())
+                //.comunidad(this.getComunidad().toDomain())//*
+                .entidad(this.getEntidad().toDomain())//*
+
                 .build();
     }
 }
