@@ -49,7 +49,7 @@ public class EntidadPropietarioEntity implements DomainTranslatable<EntidadPropi
     @Override
     public EntidadPropietario toDomain() {
         return EntidadPropietario.builder()
-                .id(this.getClienteId())
+                .id(this.getId())
                 .clienteId(this.getClienteId())
                 .porcentajePropiedad(this.getPorcentajePropiedad())
                 .entidad(this.getEntidadId().toDomain())

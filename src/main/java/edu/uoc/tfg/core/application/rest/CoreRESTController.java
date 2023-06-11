@@ -342,12 +342,10 @@ public class    CoreRESTController {
 
         Boolean esPropietario = coreService.esPropietario(clienteId, entidadId);
 
-        if(recibos.isEmpty()) return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        else{
-            if(Cliente.comprobarNivelUsuario(sesion).equals("2") || esPropietario)
-                return ResponseEntity.ok().body(recibos);
-            else return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
-        }
+        if(Cliente.comprobarNivelUsuario(sesion).equals("2") || esPropietario) {
+            if (recibos.isEmpty()) return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            else return ResponseEntity.ok().body(recibos);
+        } else return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
     }
 
     @GetMapping("/presupuesto/{comunidadId}")

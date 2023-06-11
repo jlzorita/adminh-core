@@ -36,7 +36,7 @@ public class EntidadEntity implements DomainTranslatable<Entidad> {
     @JoinColumn(name="comunidad_id", referencedColumnName = "id")
     private ComunidadEntity comunidad;
 
-    @OneToMany(mappedBy="id")
+    @OneToMany(mappedBy="entidadId")
     private Set<EntidadPropietarioEntity> propietarios = new HashSet<>();
 
     public static EntidadEntity fromDomain(Entidad entidad) {
