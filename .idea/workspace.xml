@@ -5,63 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aeecb89f-f45b-4a88-bceb-a8915ae8947b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/6/1684210ab0c99b387ff7f64b71a8ac38486c6117" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/0/20d6ea0e1efd5e0dfbfb9089967374007f49987f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2bcb47d9eddd2239b723cda4f74aa138578b30fd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f50534f01e53416c2968edb40173fd758350327" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/32c385efb6944de1fe813fa2aab8cf887cbe2419" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/4343d0d4eeb78734f38238f19c6894ecb361d187" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/e/4e022e6c77bae9bafcdc1299e7408d15902b83bc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/1/5190dc181e86ff014fbcc903dfbf3f9c1ba1bc06" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5c36500831022c77f5f51e55112bdedcdc93ac94" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81487a6c20c5a394d1e0682ec2b40120267415e9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/893c16059071a3bb01fa9e93dc9159ebac98ae7c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8cbcdc8a993bc0aea405979996c93bad28f116ba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/941463b6329bef07df57e409fcf275380965f066" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c92bd16739288f72aad77366ae238d65698a5d0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/b/ab3d3da849a9f5083c4a4176c59f6ebcc139ee89" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/b/abbca24c8dd95bdd915aebdaf55577ff4383cc32" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/0/b01464d41980a89b60be5dab1a8a987c52df9150" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/4/b449d0df42c173db76b3d92d5effbee4e4ba1799" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0328fdbc10038d44909171fd0d38c6440436bef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cb4c17c69862171a2e1dd3a4a1ca8f13ab34c448" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e90306e0935171307441cadb881bd6d5dddec081" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f95c661a3e64c9140d7102eda0e83d3a59a0b885" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03d1ccafcc0d4a8fa04f8731bf209cddbb527db4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/10ca0b40c6a4ef16688275af2a29b9ebfbc73b9c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/283ef0a1744dd8cd0a8cea7036fcc411fa6b1f32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/324dfe26205c056ba4b19e847fc5ccebbc02db0d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bb1c75329dc460a20e7b53ffad674845d690ab7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bb1c75329dc460a20e7b53ffad674845d690ab7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/569161f917caae86b8f2e331e9ef02a681f5a0fb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6d85843023c98a3e6f80d568f757b9ad64caa7c1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/7003f643947493268b0948da583e1d853180eaba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/b/7b1ad8f7b12a9cc50f963a8e47147697f6a18812" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/b/7b1ad8f7b12a9cc50f963a8e47147697f6a18812" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c4e212a3151e3d56b091a3a433efb5148f628ad3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e292eb6b5a5a2949a2d37316f39e44de44f9f826" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e95678a94b681e38414808b1406a68f608a33671" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/6/1684210ab0c99b387ff7f64b71a8ac38486c6117" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/0/20d6ea0e1efd5e0dfbfb9089967374007f49987f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/b/2bcb47d9eddd2239b723cda4f74aa138578b30fd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/f/2f50534f01e53416c2968edb40173fd758350327" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/2/32c385efb6944de1fe813fa2aab8cf887cbe2419" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/3/4343d0d4eeb78734f38238f19c6894ecb361d187" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/e/4e022e6c77bae9bafcdc1299e7408d15902b83bc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/1/5190dc181e86ff014fbcc903dfbf3f9c1ba1bc06" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/c/5c36500831022c77f5f51e55112bdedcdc93ac94" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/1/81487a6c20c5a394d1e0682ec2b40120267415e9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/9/893c16059071a3bb01fa9e93dc9159ebac98ae7c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/c/8cbcdc8a993bc0aea405979996c93bad28f116ba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/4/941463b6329bef07df57e409fcf275380965f066" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/c/9c92bd16739288f72aad77366ae238d65698a5d0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/b/ab3d3da849a9f5083c4a4176c59f6ebcc139ee89" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/b/abbca24c8dd95bdd915aebdaf55577ff4383cc32" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/0/b01464d41980a89b60be5dab1a8a987c52df9150" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/4/b449d0df42c173db76b3d92d5effbee4e4ba1799" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/0/c0328fdbc10038d44909171fd0d38c6440436bef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/b/cb4c17c69862171a2e1dd3a4a1ca8f13ab34c448" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/9/e90306e0935171307441cadb881bd6d5dddec081" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/9/f95c661a3e64c9140d7102eda0e83d3a59a0b885" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/3/03d1ccafcc0d4a8fa04f8731bf209cddbb527db4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/0/10ca0b40c6a4ef16688275af2a29b9ebfbc73b9c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/8/283ef0a1744dd8cd0a8cea7036fcc411fa6b1f32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/2/324dfe26205c056ba4b19e847fc5ccebbc02db0d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/6/569161f917caae86b8f2e331e9ef02a681f5a0fb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/d/6d85843023c98a3e6f80d568f757b9ad64caa7c1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/0/7003f643947493268b0948da583e1d853180eaba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/4/c4e212a3151e3d56b091a3a433efb5148f628ad3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/2/e292eb6b5a5a2949a2d37316f39e44de44f9f826" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/9/e95678a94b681e38414808b1406a68f608a33671" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/application/rest/CoreRESTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/application/rest/CoreRESTController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/infrastructure/repository/jpa/EntidadEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/infrastructure/repository/jpa/EntidadEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/infrastructure/repository/jpa/EntidadPropietarioEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/infrastructure/repository/jpa/EntidadPropietarioEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/core/application/rest/CoreRESTController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/core/application/rest/CoreRESTController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/core/infrastructure/repository/jpa/EntidadRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/core/infrastructure/repository/jpa/EntidadRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/core/infrastructure/repository/jpa/FacturaRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/core/infrastructure/repository/jpa/FacturaRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/core/infrastructure/repository/jpa/PresupuestoRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/core/infrastructure/repository/jpa/PresupuestoRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/core/infrastructure/repository/jpa/PublicacionRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/core/infrastructure/repository/jpa/PublicacionRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/core/infrastructure/repository/jpa/ReciboRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/core/infrastructure/repository/jpa/ReciboRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/application/kafka/KafkaClassListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/application/kafka/KafkaClassListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/application/rest/ClienteRESTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/application/rest/ClienteRESTController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/service/ClienteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/core/domain/service/ClienteServiceImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,30 +75,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/TFG/adminh-user",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "sonarlint",
-    "spring.configuration.checksum": "a74ad8dfacd4f985eb3977517615ce25",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/TFG/adminh-user&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;sonarlint&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a74ad8dfacd4f985eb3977517615ce25&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="edu.uoc.tfg.core.infrastructure.repository.jpa" />
@@ -257,7 +230,9 @@
       <workItem from="1684910254169" duration="1029000" />
       <workItem from="1684946456784" duration="7659000" />
       <workItem from="1684961704427" duration="1953000" />
-      <workItem from="1686504090854" duration="3609000" />
+      <workItem from="1686504090854" duration="4363000" />
+      <workItem from="1686508470286" duration="1848000" />
+      <workItem from="1686552352232" duration="493000" />
     </task>
     <servers />
   </component>

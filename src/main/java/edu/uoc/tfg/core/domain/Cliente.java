@@ -1,5 +1,6 @@
 package edu.uoc.tfg.core.domain;
 
+import edu.uoc.tfg.core.SesionData;
 import lombok.*;
 
 import java.util.HashMap;
@@ -54,5 +55,11 @@ public class Cliente {
         }
 
         return encontrado;
+    }
+
+    public static void setSesion(SesionData sesion) {
+        Cliente.removeUsuario(sesion.getUsuario());
+        if(sesion.isAlta())
+            Cliente.addUsuario(sesion.getUsuario(),sesion.getSesion());
     }
 }

@@ -1,7 +1,6 @@
 package edu.uoc.tfg.core.application.rest;
 
 import edu.uoc.tfg.core.domain.Cliente;
-import edu.uoc.tfg.core.domain.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import lombok.RequiredArgsConstructor;
@@ -16,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class ClienteRESTController {
 
-    private final ClienteService ClienteService;
+    //private final ClienteService ClienteService;
 
     @GetMapping("/user/sesion/{usuario}")
     @ResponseStatus(HttpStatus.OK)
