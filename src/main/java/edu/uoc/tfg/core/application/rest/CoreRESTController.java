@@ -29,15 +29,31 @@ public class    CoreRESTController {
 
     @GetMapping("/factura/ver/{filename:.+}")
     @ResponseBody
-    public ResponseEntity<Resource> verFactura(@PathVariable String filename) {
+    public ResponseEntity<Resource> verFactura(@PathVariable String filename, @RequestParam String comunidadId,
+                                    @RequestParam String sesion) {
+        log.trace("verFactura");
 
-        Resource file = subirFicheroService.cargar(filename);
-        return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION,
-                "attachment; filename=\"" + file.getFilename() + "\"").body(file);
+        //Solo usuario administrador y vecino de la comunidad
+
+        if(Cliente.comprobarNivelUsuario(sesion) == null) return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+        Long clienteId = Long.parseLong(Cliente.getCliente(sesion));
+
+        if(Cliente.comprobarNivelUsuario(sesion).equals("2") || coreService.esVecino(clienteId,Long.parseLong(comunidadId))) {
+            Resource file = subirFicheroService.cargar(filename);
+            return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION,
+                    "attachment; filename=\"" + file.getFilename() + "\"").body(file);
+        }else
+            return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
     }
+
     @PostMapping("/factura/subir")
     public ResponseEntity subirFactura(@RequestParam("file") MultipartFile factura,
-                                       @RequestParam String id) {
+                                       @RequestParam String id, @RequestParam String sesion) {
+        log.trace("subirFactura");
+
+        //Se comprueba que el usuario sea administrador
+        String nivel = Cliente.comprobarNivelUsuario(sesion);
+        if(nivel == null || !nivel.equals("2")) return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
 
         coreService.subirFactura(Long.parseLong(id));
         subirFicheroService.guardar(factura, id + ".pdf");
@@ -48,7 +64,7 @@ public class    CoreRESTController {
     @GetMapping("/comunidades/{clienteId}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<EntidadPropietario>> getEntidadesPorCliente(@PathVariable Long clienteId, @RequestParam String sesion) {
-        log.trace("getEntidadesByCliente");
+        log.trace("getEntidadesPorCliente");
         String cId = Cliente.getCliente(sesion);
 
         //El usuario que lo solicita tiene que ser el mismo
@@ -111,7 +127,7 @@ public class    CoreRESTController {
     @GetMapping("/comunidadEntidad/{entidadId}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Long> getComunidadIdPorEntidad(@PathVariable Long entidadId, @RequestParam String sesion) {
-        log.trace("getIdComunidadDeEntidad");
+        log.trace("getIdComunidadPorEntidad");
 
         //Para consultarlo se debe ser vecino de la comunidad o ser usuario administrador
         String nivel = Cliente.comprobarNivelUsuario(sesion);
@@ -128,7 +144,7 @@ public class    CoreRESTController {
     @GetMapping("/publicacion/{comunidadId}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<Publicacion>> getPublicacionesComunidad(@PathVariable Long comunidadId, @RequestParam String sesion) {
-        log.trace("publicacionesComunidad");
+        log.trace("getPublicacionesComunidad");
 
         //Para consultarlo se debe ser vecino de la comunidad o ser usuario administrador
 
@@ -298,7 +314,7 @@ public class    CoreRESTController {
     @GetMapping("/recibo/{comunidadId}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<Recibo>> getRecibosPagadosPorFecha(@PathVariable Long comunidadId, @RequestParam String anualidad, @RequestParam String sesion) {
-        log.trace("getRecibosPagadosPorFechas");
+        log.trace("getRecibosPagadosPorFecha");
 
         //Solo usuario administrador y vecino comunidad
         if(Cliente.comprobarNivelUsuario(sesion) == null) return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
@@ -332,7 +348,7 @@ public class    CoreRESTController {
     @GetMapping("/recibo/pendientes/entidad/{entidadId}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<Recibo>> getRecibosPendientesEntidad(@PathVariable Long entidadId, @RequestParam String sesion) {
-        log.trace("getRecibosPendientes");
+        log.trace("getRecibosPendientesEntidad");
 
         //Solo administrador y propietario
         if(Cliente.comprobarNivelUsuario(sesion) == null) return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
@@ -371,7 +387,7 @@ public class    CoreRESTController {
     @GetMapping("/presupuesto/partidas/{presupuestoId}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<Partida>> getPartidasPresupuestoComunidad(@PathVariable Long presupuestoId, @RequestParam String sesion) {
-        log.trace("getPartidasPresupuestosComunidad");
+        log.trace("getPartidasPresupuestoComunidad");
 
         //Solo administrador y vecino comunidad
         if(Cliente.comprobarNivelUsuario(sesion) == null) return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);

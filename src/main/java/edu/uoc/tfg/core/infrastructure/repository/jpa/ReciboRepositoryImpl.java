@@ -43,6 +43,7 @@ public class ReciboRepositoryImpl implements ReciboRepository {
             recibo.setConcepto(concepto);
             recibo.setImporte(importe);
             recibo.setEntidad(entidad);
+            recibo.setComunidad(comunidad);
             recibo.setPagado(false);
             jpaRepository.save(recibo);
             return true;

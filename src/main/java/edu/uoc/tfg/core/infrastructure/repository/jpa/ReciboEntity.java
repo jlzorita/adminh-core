@@ -67,7 +67,7 @@ public class ReciboEntity implements DomainTranslatable<Recibo> {
                 .importe(this.getImporte())
                 .fechaPago(this.getFechaPago())
                 .pagado(this.getPagado())
-                //.comunidad(this.getComunidad().toDomain())//*
+                .comunidad(this.getComunidad().toDomain())
                 .entidad(this.getEntidad().toDomain())//*
 
                 .build();

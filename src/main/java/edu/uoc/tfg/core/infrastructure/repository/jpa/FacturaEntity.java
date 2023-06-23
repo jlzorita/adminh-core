@@ -32,7 +32,7 @@ public class FacturaEntity implements DomainTranslatable<Factura> {
     private Boolean autorizada;
     @Column(name = "fecha_pago")
     private Date fechaPago;
-    @Column(name = "pdf")
+    @Column(name = "pdf", nullable = false, columnDefinition = "boolean default false")
     private Boolean pdf;
 
     //private String pdf;

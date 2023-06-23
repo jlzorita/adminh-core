@@ -20,18 +20,18 @@ VALUES ('Electricidad escalera',false, 1),
        ('Suministro de agua', false, 2),
        ('Imprevistos', true, 2);
 
-INSERT INTO entidad(id, nombre, coeficiente, comunidad_id)
-VALUES (1, 'Local', 32.05, 1),
-       (2,'1-1',9.65,1),
-       (3,'1-2',9.4,1),
-       (4,'2-1',9.65,1),
-       (5,'2-2',9.4,1),
-       (6,'3-1',9.65,1),
-       (7,'3-2',9.4,1),
-       (8,'Ático',10.8,1),
-       (9, 'Local', 33.34, 2),
-       (10,'1-1',33.33,2),
-       (11,'1-2',33.33,2);
+INSERT INTO entidad(nombre, coeficiente, comunidad_id)
+VALUES ('Local', 32.05, 1),
+       ('1-1',9.65,1),
+       ('1-2',9.4,1),
+       ('2-1',9.65,1),
+       ('2-2',9.4,1),
+       ('3-1',9.65,1),
+       ('3-2',9.4,1),
+       ('Ático',10.8,1),
+       ('Local', 33.34, 2),
+       ('1-1',33.33,2),
+       ('1-2',33.33,2);
 
 
 INSERT INTO entidad_propietario(entidad_id, cliente_id, porcentaje_propiedad)

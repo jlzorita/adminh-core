@@ -1,7 +1,7 @@
 
 ^
 java:S4973="<Strings and Boxed types should be compared using "equals()".(ŠáàĞøÿÿÿÿ8ş¯İŠ1
-m
-java:S36555"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ñ–‰û8ŒŸ¯İŠ1
 f
 java:S3655G"DCall "ee.isPresent()" or "!ee.isEmpty()" before accessing the value.(õçëªıÿÿÿÿ8ŒŸ¯İŠ1
+m
+java:S36555"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ñ–‰û8ŒŸ¯İŠ1

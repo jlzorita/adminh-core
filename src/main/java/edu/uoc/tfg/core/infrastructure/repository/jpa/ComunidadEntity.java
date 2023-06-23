@@ -93,7 +93,7 @@ public class ComunidadEntity implements DomainTranslatable<Comunidad> {
                 .publicaciones((this.getPublicaciones().stream().map(PublicacionEntity::toDomain).collect(Collectors.toSet())))//*
                 .presupuestos((this.getPresupuestos().stream().map(PresupuestoEntity::toDomain).collect(Collectors.toSet())))//*
                 .entidades((this.getEntidades().stream().map(EntidadEntity::toDomain).collect(Collectors.toSet())))//*
-                .recibos((this.getRecibos().stream().map(ReciboEntity::toDomain).collect(Collectors.toSet())))//*
+                //.recibos((this.getRecibos().stream().map(ReciboEntity::toDomain).collect(Collectors.toSet())))//*
                 .facturas((this.getFacturas().stream().map(FacturaEntity::toDomain).collect(Collectors.toSet())))
                 .build();
     }

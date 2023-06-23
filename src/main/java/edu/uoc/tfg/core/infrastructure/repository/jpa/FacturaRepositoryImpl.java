@@ -55,6 +55,7 @@ public class FacturaRepositoryImpl implements FacturaRepository {
             PartidaEntity pe = new PartidaEntity();
             pe.setId(partidaId);
             fe.setPagada(false);
+            fe.setPdf(false);
             fe.setAutorizada(autorizada);
             fe.setFechaFactura(fechaFactura);
             fe.setComunidad(ce);
